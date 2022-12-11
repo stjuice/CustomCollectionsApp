@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ConsoleApp1\CustomCollections.csproj" />
+    <ProjectReference Include="..\CustomCollections\CustomCollections.csproj" />
   </ItemGroup>
 
 </Project>
