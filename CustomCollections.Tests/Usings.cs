@@ -1,1 +1,2 @@
-global using Microsoft.VisualStudio.TestTools.UnitTesting; // check global
+global using Microsoft.VisualStudio.TestTools.UnitTesting;
+global using CustomCollectionsApp;

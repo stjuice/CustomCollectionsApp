@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace CustomCollectionsApp
+namespace CustomCollections.ArrayList
 {
     public class SingleLinkedArrayListGeneric<T>
     {
@@ -166,4 +166,4 @@ namespace CustomCollectionsApp
             return null;
         }
     }
-} 
+}

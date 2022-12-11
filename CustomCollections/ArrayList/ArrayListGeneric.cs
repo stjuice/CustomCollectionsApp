@@ -8,7 +8,7 @@ using System.Drawing;
 using System.Reflection;
 using System.Text;
 
-namespace CustomCollectionsApp
+namespace CustomCollections.ArrayList
 {
     // - T this[int index]
     // - void Insert(int index, T item);
@@ -83,7 +83,7 @@ namespace CustomCollectionsApp
 
         public void RemoveAt(int index)
         {
-            if ((index >= 0) && (index < Count))
+            if (index >= 0 && index < Count)
             {
                 for (int i = index; i < Count - 1; i++)
                 {
@@ -102,7 +102,7 @@ namespace CustomCollectionsApp
             size = 0;
 
             while (i > size)
-                contents[--i] = default(T);
+                contents[--i] = default;
         }
 
         public virtual void Insert(int index, T value)

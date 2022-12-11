@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace CustomCollectionsApp
+namespace CustomCollections.ArrayList
 {
     public class DoubleLinkedArrayListGeneric<T>
     {

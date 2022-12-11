@@ -1,8 +1,9 @@
-﻿using System;
+﻿using CustomCollections.ArrayList;
+using System;
 
-namespace CustomCollectionsApp // rename
+namespace CustomCollectionsApp
 {
-    class Program // rename
+    class Program
     {
         static void Main()
         {

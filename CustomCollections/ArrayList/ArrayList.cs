@@ -7,7 +7,7 @@ using System.Diagnostics.Contracts;
 using System.Reflection;
 using System.Text;
 
-namespace CustomCollectionsApp
+namespace CustomCollections.ArrayList
 {
     public class ArrayListT
     {
@@ -95,15 +95,15 @@ namespace CustomCollectionsApp
             }
         }
 
-        public void Remove(object item) => 
+        public void Remove(object item) =>
             RemoveAt(IndexOf(item));
 
-        public int IndexOf(object item) 
+        public int IndexOf(object item)
             => Array.IndexOf((Array)contents, item, 0, size);
 
         public void RemoveAt(int index)
         {
-            if ((index >= 0) && (index < Count))
+            if (index >= 0 && index < Count)
             {
                 for (int i = index; i < Count - 1; i++)
                 {
@@ -113,7 +113,7 @@ namespace CustomCollectionsApp
             }
         }
 
-        private void CopyTo(object[] itemsToInsert, int index) => 
+        private void CopyTo(object[] itemsToInsert, int index) =>
             Array.Copy(contents, 0, itemsToInsert, index, size);
 
         private void EncreaseArray(int encreasingValue)
