@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace CustomCollectionsApp
 {
-    public class ArrayListGenericDoubleLinked<T>
+    public class DoubleLinkedArrayListGeneric<T>
     {
         public class Node
         {

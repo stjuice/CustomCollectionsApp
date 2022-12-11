@@ -4,7 +4,7 @@ using System.Collections;
 namespace CustomCollections.Tests
 {
     [TestClass]
-    public class ArrayListGenericSingleLinkedTest
+    public class SingleLinkedArrayListGenericTest
     {
         [TestClass]
         public class Add
@@ -13,7 +13,7 @@ namespace CustomCollections.Tests
             public void Add_Item()
             {
                 // Arrange
-                var list = new ArrayListGenericSingleLinked<int>();
+                var list = new SingleLinkedArrayListGeneric<int>();
                 var expected = 1;
 
                 // Act
@@ -29,7 +29,7 @@ namespace CustomCollections.Tests
             public void Add_Items()
             {
                 // Arrange
-                var list = new ArrayListGenericSingleLinked<int>();
+                var list = new SingleLinkedArrayListGeneric<int>();
                 var expectedItem1 = 1;
                 var expectedItem2 = 3;
                 var expectedItem3 = 5;
@@ -53,7 +53,7 @@ namespace CustomCollections.Tests
             public void AddFirst()
             {
                 // Arrange
-                var list = new ArrayListGenericSingleLinked<int>();
+                var list = new SingleLinkedArrayListGeneric<int>();
                 var expectedItem1 = 1;
 
                 // Act
@@ -71,7 +71,7 @@ namespace CustomCollections.Tests
             public void AddLast()
             {
                 // Arrange
-                var list = new ArrayListGenericSingleLinked<int>();
+                var list = new SingleLinkedArrayListGeneric<int>();
                 var expected = 5;
 
                 // Act
@@ -94,7 +94,7 @@ namespace CustomCollections.Tests
             public void RemoveNode()
             {
                 // Arrange
-                var list = new ArrayListGenericSingleLinked<int>();
+                var list = new SingleLinkedArrayListGeneric<int>();
                 var expected = false;
 
                 // Act

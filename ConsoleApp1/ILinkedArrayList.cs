@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CustomCollections
 {
-    internal interface IArrayLinkedList<T, Node>
+    internal interface ILinkedArrayList<T, Node>
     {
         public void GetFirstNode();
 

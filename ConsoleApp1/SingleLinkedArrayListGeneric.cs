@@ -2,7 +2,7 @@
 
 namespace CustomCollectionsApp
 {
-    public class ArrayListGenericSingleLinked<T>
+    public class SingleLinkedArrayListGeneric<T>
     {
         public class Node
         {
