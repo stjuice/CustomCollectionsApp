@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace CustomCollections.ArrayLists
 {
@@ -25,7 +26,23 @@ namespace CustomCollections.ArrayLists
 
         public SingleLinkedList(Node node)
         {
-            head = node;
+            head = tail = node;
+        }
+
+        public SingleLinkedList(Node[] nodes)
+        {
+            foreach (var n in nodes)
+            {
+                InsertLast(n);
+            }
+        }
+
+        public SingleLinkedList(T[] items)
+        {
+            foreach (var it in items)
+            {
+                InsertLast(new Node(it));
+            }
         }
 
         public Node this[int index]
