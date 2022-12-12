@@ -1,9 +1,9 @@
 using CustomCollections.ArrayLists;
 
-namespace CustomCollections.Tests;
+namespace CustomCollections.Tests.ArrayList;
 
 [TestClass]
-public class ArrayListGenericTests 
+public class ArrayListGenericTests
 {
     [TestClass]
     public class CreateArrayListTests

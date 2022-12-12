@@ -1,6 +1,6 @@
 using CustomCollections.ArrayLists;
 
-namespace CustomCollections.Tests;
+namespace CustomCollections.Tests.ArrayList;
 
 [TestClass]
 public class ArrayListTests
