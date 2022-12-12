@@ -1,4 +1,4 @@
-using CustomCollections.ArrayList;
+using CustomCollections.ArrayLists;
 
 namespace CustomCollections.Tests;
 

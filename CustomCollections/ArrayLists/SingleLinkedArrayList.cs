@@ -1,8 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
-namespace CustomCollections.ArrayList
+namespace CustomCollections.ArrayLists
 {
-    public class SingleLinkedArrayListGeneric<T>
+    public class SingleLinkedArrayList<T>
     {
         public class Node
         {
@@ -19,7 +20,7 @@ namespace CustomCollections.ArrayList
         private Node head;
         private Node tail;
 
-        public T this[int index]
+        public Node this[int index]
         {
             get
             {
@@ -29,16 +30,7 @@ namespace CustomCollections.ArrayList
                     currentNode = currentNode.Next;
                 }
 
-                return currentNode.Value;
-            }
-            set
-            {
-                var currentNode = head;
-                for (int i = 1; i <= index; i++)
-                {
-                    currentNode = currentNode.Next;
-                }
-                currentNode.Value = value;
+                return currentNode;
             }
         }
 

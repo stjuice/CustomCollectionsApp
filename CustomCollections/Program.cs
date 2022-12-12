@@ -1,4 +1,4 @@
-﻿using CustomCollections.ArrayList;
+﻿using CustomCollections.ArrayLists;
 using System;
 
 namespace CustomCollectionsApp

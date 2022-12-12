@@ -8,7 +8,7 @@ using System.Drawing;
 using System.Reflection;
 using System.Text;
 
-namespace CustomCollections.ArrayList
+namespace CustomCollections.ArrayLists
 {
     // - T this[int index]
     // - void Insert(int index, T item);
@@ -37,6 +37,18 @@ namespace CustomCollections.ArrayList
             AddRange(collection);
         }
 
+        public T this[int index]
+        {
+            get
+            {
+                return contents[index];
+            }
+            set
+            {
+                contents[index] = value;
+            }
+        }
+
         private void AddRange(ICollection collection)
         {
             var count = collection.Count;
@@ -49,18 +61,6 @@ namespace CustomCollections.ArrayList
                 var itemsToInsert = new T[count];
                 collection.CopyTo(itemsToInsert, 0);
                 itemsToInsert.CopyTo(contents, index);
-            }
-        }
-
-        public T this[int index]
-        {
-            get
-            {
-                return contents[index];
-            }
-            set
-            {
-                contents[index] = value;
             }
         }
 

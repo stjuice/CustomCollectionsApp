@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CustomCollections.ArrayList
+namespace CustomCollections.ArrayLists
 {
     internal interface ILinkedArrayList<T, Node>
     {

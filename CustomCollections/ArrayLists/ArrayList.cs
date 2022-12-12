@@ -7,9 +7,9 @@ using System.Diagnostics.Contracts;
 using System.Reflection;
 using System.Text;
 
-namespace CustomCollections.ArrayList
+namespace CustomCollections.ArrayLists
 {
-    public class ArrayListT
+    public class ArrayListT // rename
     {
         private object[] contents;
         private int size;
