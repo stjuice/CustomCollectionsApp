@@ -12,11 +12,11 @@ namespace CustomCollections.ArrayLists
             }
 
             public T Value { get; set; }
+
             public Node Next { get; set; }
         }
 
         private Node head = null;
-
         private Node tail = null;
 
         public SingleLinkedList()
